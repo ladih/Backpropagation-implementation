@@ -45,7 +45,7 @@ class NeuralNetwork:
 
 
                 out_layers = [np.delete(o, -1, axis=0) for o in out_layers_ext]  # weights without biases
-                out_layers_ext = [o.reshape(1, -1) for o in out_layers_ext] # column -> row
+                out_layers_ext = [o.reshape(1, -1) for o in out_layers_ext]
 
                 derivatives = [np.diag(o * (1 - o)) for o in out_layers] # stored derivatives in matrix form at each layer
 
