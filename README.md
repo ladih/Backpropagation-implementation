@@ -1,8 +1,5 @@
 # Backpropagation-implementation
 
+Just an implementation of the backpropagation algorithm for layered networks.
 
-How to use:
-1. Create a NeuralNetwork object.
-2. Train the NeuralNetwork
-3. 
 July 2023
