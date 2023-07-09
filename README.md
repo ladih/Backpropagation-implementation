@@ -2,7 +2,7 @@
 
 Implementation of the backpropagation algorithm for layered networks.
 
-Purpose: Wanted to learn how neural networks work.
+This project was undertaken as a personal learning endeavor to gain hands-on experience and enhance my skills in."
 
 How to use: see how_to_use.py
 
