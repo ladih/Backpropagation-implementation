@@ -1,14 +1,14 @@
+# Example usage
+
 from network import *  # import network
-import random
 
 X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])  # training data
 y = np.array([[0], [1], [1], [0]])              # labels
 
-
 # Create an instance of the NeuralNetwork class
 nn = NeuralNetwork(input_size=len(X[0]), output_size=len(y[0]), hidden_sizes=[5, 10, 5])
 
-# Train it
+# Train the instance
 nn.train(X, y, learning_rate=0.1, epochs=200000, batch_size=len(X), error_threshold=0.001)
 
 # Predict unseen data
