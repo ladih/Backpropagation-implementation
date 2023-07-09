@@ -1,6 +1,6 @@
 # Example usage
 
-from network import *  # import network
+from network import * 
 
 X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])  # training data
 y = np.array([[0], [1], [1], [0]])              # labels
