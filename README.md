@@ -2,7 +2,7 @@
 
 Implementation of the backpropagation algorithm for layered networks.
 
-Purpose: This project was created for educational learning.
+Purpose: Wanted to learn how backpropagation works.
 
 How to use: see how_to_use.py
 
