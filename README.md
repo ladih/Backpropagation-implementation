@@ -2,6 +2,8 @@
 
 Implementation of the backpropagation algorithm for layered networks.
 
-See how_to_use.py for how to use.
+Purpose: Wanted to learn how neural networks work.
+
+How to use: see how_to_use.py
 
 July 2023
