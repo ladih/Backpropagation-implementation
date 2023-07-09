@@ -19,14 +19,13 @@ nn = NeuralNetwork(input_size=len(X[0]), output_size=len(y[0]), hidden_sizes=[3,
 
 nn.train(X, y, learning_rate=0.1, epochs=200000, batch_size=len(X), error_threshold=0.0001)
 
+nn.plot_error_curve()
 
 print("\nSome predictions:")
 print(nn.predict(X[0]))
 print(nn.predict(X[1]))
 print(nn.predict(X[2]))
 print(nn.predict(X[3]))
-
-nn.plot_error_curve()
 
 def plot_2D(n):
     """If input is 2D and output is 1D, this function shows how n
