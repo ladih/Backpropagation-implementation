@@ -1,4 +1,4 @@
-# Testing the network
+# Some random tests/plots
 
 from network import *
 import random
