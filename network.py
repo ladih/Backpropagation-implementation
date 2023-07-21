@@ -93,7 +93,7 @@ class NeuralNetwork:
         """Just a print when training is done."""
 
         formatted_threshold = "{:.0e}".format(error_threshold).replace("e-0", "e-")
-        print("Training ended with error <", formatted_threshold, "after", epoch + 1, "epochs.", end="\n")
+        print("Training stopped with error <", formatted_threshold, "after", epoch + 1, "epochs.", end="\n")
         print("Learning rate:", learning_rate)
         print("Batch size:", batch_size)
         print("Hidden_sizes:", hidden_sizes)
