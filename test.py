@@ -6,18 +6,18 @@ import random
 # X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
 # y = np.array([[0], [1], [1], [0]])
 
-X = np.array([[0, 0], [0.5, 0], [1, 0], [0, 0.5], [0, 1], [0.25, 0.25], [0.5, 0.5], [1, 1]])    # input
-y = np.array([[1], [1], [1], [1], [1], [0], [0], [0]])     # labels
+# X = np.array([[0, 0], [0.5, 0], [1, 0], [0, 0.5], [0, 1], [0.25, 0.25], [0.5, 0.5], [1, 1]])    # input
+# y = np.array([[1], [1], [1], [1], [1], [0], [0], [0]])     # labels
 
 # X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])    # input
 # y = np.array([[1, 1, 1], [1, 0, 1], [1, 0, 0], [0, 0, 1]])
 
-# X = np.array([[0, 0], [0, 1], [1, 0], [1, 1], [0.5, 0.5], [0.5, 1], [0, 0.5], [0.5, 0], [1, 0.5]])    # input
-# y = np.array([[1], [1], [1], [1], [0], [1], [1], [1], [1]])
+X = np.array([[0, 0], [0, 1], [1, 0], [1, 1], [0.5, 0.5], [0.5, 1], [0, 0.5], [0.5, 0], [1, 0.5]])    # input
+y = np.array([[1], [1], [1], [1], [0], [1], [1], [1], [1]])
 
-nn = NeuralNetwork(input_size=len(X[0]), output_size=len(y[0]), hidden_sizes=[3, 100, 100, 3])
+nn = NeuralNetwork(input_size=len(X[0]), output_size=len(y[0]), hidden_sizes=[64, 64])
 
-nn.train(X, y, learning_rate=0.1, epochs=200000, batch_size=len(X), error_threshold=0.0001)
+nn.train(X, y, learning_rate=0.1, epochs=200000, batch_size=len(X), error_threshold=1e-2)
 
 nn.plot_error_curve()
 
