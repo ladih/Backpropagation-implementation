@@ -1,4 +1,4 @@
-# Some random tests/plots
+# Some random tests to see that e.g. the loss decreases in a reasonable way
 
 from network import *
 import random
