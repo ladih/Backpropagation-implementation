@@ -1,3 +1,3 @@
-# Backpropagation-implementation
+# Backpropagation
 
 July 2023
